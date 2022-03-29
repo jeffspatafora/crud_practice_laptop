@@ -1,0 +1,30 @@
+### laptops index
+GET http://localhost:3000/laptops
+
+### laptop create
+POST http://localhost:3000/laptops
+Content-Type: application/json
+
+{
+  "brand": "test",
+  "model": "test",
+  "price": 3000,
+  "screen_size": "test"
+}
+
+### laptop show
+GET http://localhost:3000/laptops/2
+
+### laptop update
+POST http://localhost:3000/laptops/3
+Content-type: application/json 
+
+{
+  "brand": "Vizio",
+  "model": "fancy",
+  "price": 3000,
+  "screen_size": "40 inch"
+}
+
+### laptop destroy
+DELETE http://localhost:3000/laptops/4
