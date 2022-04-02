@@ -35,6 +35,14 @@ class LaptopsController < ApplicationController
     laptop = Laptop.find_by(id: params[:id])
 
     laptop.delete
-    render json: {message: "laptop removed"}
+    render json: { message: "laptop removed" }
   end
+
+  def destroyall
+    laptops = Laptop.all 
+    
+    laptops.delete
+    render json: { message: "all laptops deleted" }
+  end
+  
 end

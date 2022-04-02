@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get "/laptops/:id" => "laptops#show"
   post "/laptops/:id" => "laptops#update"
   delete "/laptops/:id" => "laptops#destroy"
+  delete "/laptops" => "laptops#destroyall"
 end
